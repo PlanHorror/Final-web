@@ -1,0 +1,69 @@
+<style>
+    nav {
+        position: fixed; /* Fixed navbar */
+    }
+    .navbar-nav .nav-link {
+        font-size: 1.5rem; /* Bigger text size */
+    }
+    .navbar-brand {
+        font-size: 2rem; /* Title size */
+        font-weight: bold;
+    }
+    .container-fluid {
+        width: 100%; /* Full width */
+    }
+    .bg-primary-custom {
+        background-color: #6c757d; /* Custom grayish-blue color */
+    }
+    .navbar-brand .highlight {
+        color: #ffc107; /* Bright orange color for M */
+    }
+    .dropdown-menu {
+        background-color: #6c757d; /* Custom grayish-blue color */
+    }
+    .dropdown-item {
+        color: white; /* White text color */
+    }
+    .dropdown-item:hover {
+        background-color: #495057; /* Darker grayish-blue color */
+        color: white; /* White text color */
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+    <div class="container-fluid">
+        <!-- Title -->
+        <a class="navbar-brand" href="index.php"><span class="highlight">A</span>dmin</a>
+        
+        <!-- Left Side -->
+        <div class="navbar-nav me-auto">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="marathonManagerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Marathon Manager
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="marathonManagerDropdown">
+                    <li><a class="dropdown-item" href="createmarathon.php">Create Marathon</a></li>
+                    <li><a class="dropdown-item" href="listmarathon.php">List Marathon</a></li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="accountManagerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Account Manager
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="accountManagerDropdown">
+                    <li><a class="dropdown-item" href="listacc.php">List Account</a></li>
+                    <li><a class="dropdown-item" href="participates.php">List Participate</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Right Side -->
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link non-auth" href="login.php">Login</a>
+            <a class="nav-link auth" href="logout.php">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<!-- A space for the navbar -->
+<div style="height: 100px;"></div>
+
